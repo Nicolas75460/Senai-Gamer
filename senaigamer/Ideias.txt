@@ -1,0 +1,18 @@
+BrainStorm:
+
+Objetivo: *Criar um site para o interclasse gamer do SENAI*
+
+Ideias:
+
+- Informações do torneio (Exemplo: Data e horário do torneio, local, regras);
+- Os jogos que estaram presentes;
+- Contatos;
+- Inscrição;
+- Premiação;
+- Timer até o evento ao fundo.
+
+
+Design site:
+
+- Hover/Transition (Tela inteira);
+- Frase motivacional;
