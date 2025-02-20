@@ -4,31 +4,50 @@
     box-sizing: border-box
 }
 
+
 @font-face {
-    font-family: 'RubikMono';
-    src: url('fonts/RubikMonoOne-Regular.ttf') format('truetype');
+    font-family: 'FjallaOne';
+    src: url('fonts/FjallaOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Qualquer';
+    src: url('fonts/Quantico-Bold.ttf');
 }
 
 .interclasse {
-    font-family:Fja, Geneva, Tahoma, sans-serif;
+    font-family:Qua, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 58px;
+}
+
+.gamer {
+    font-family: FjallaOne, Geneva, Tahoma, sans-serif;
+    font-size: 58px;
+}
+
+.senai {
+    font-size: 65px;
 }
 
 .senaigamer {
-    font-family:RubikMono, Geneva, Tahoma, sans-serif;
+    font-family:FjallaOne, Geneva, Tahoma, sans-serif;
     display: flex;
     gap: 15px;
     font-size: 30px;
+    align-items: center;
 }
 
 header {
     display: flex;
     justify-content: center;
-    padding: 20px;
-    background: linear-gradient(to bottom, #5a5a5a 70%, transparent);
-    padding: 110;
+    padding: 100px ;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(to bottom, #290000, #6b0404 40%, transparent);
 }
 
 .senai {
@@ -36,17 +55,21 @@ header {
 }
 
 .gamer {
-    color: rgb(20, 20, 20);
-}
-
-.frase {
-    display: flex;
-    background-color: rgb(52, 52, 52);
-    border-radius: 20px;
-    width: 75%;
-    height: 300px;
+    color: rgb(255, 255, 255);
 }
 
 .textoFrase {
+    display: block;
+    margin: 20px auto;
+    background-color: rgb(52, 52, 52);
+    border-radius: 20px;
+    width: 60%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
     color: white;
+    text-align: center;
+    padding: 2%;
+    font-family: Qualquer, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
 }
