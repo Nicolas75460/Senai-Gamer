@@ -4,41 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senai Gamer</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/timer.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/imagemJogos.css">
+    <link rel="stylesheet" href="css/inscricao.css">
 </head>
 <body>
     <div class="degrade"></div>
     <header>
-        <div class="titulo">
-            <div class="interclasse">
+        <section id="titulo">
+            <div id="interclasse">
                 <h2>Interclasse</h2>
             </div>
             <div class="senaigamer">
-                <div class="senai">
+                <div id="senai">
                     <h1>Senai</h1>
                 </div>
-                <div class="gamer">
+                <div id="gamer">
                     <h1>Gamer</h1>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="introducao">
+            <div id="frase">
+                <p>
+                    No jogo e na vida, a vitória vem para quem persiste. Jogue com garra, vença com honra!
+                </p>
+            </div>
+            <div class="iconeJogos">
+                <a href="#vava"><div id="valorant">
+                    <img src="../img/icone_valorant.png" alt="" >
+                </div></a>
+                <a href="#fifinha"><div id="fifa">
+                    <img src="../img/icone_easports.png" alt="">
+                </div></a>
+                <a href="#brawl"><div id="brawlstars">
+                    <img src="../img/icone_brawlstars.png" alt="">
+                </div></a>
+                <a href="#sf"><div id="streetfight">
+                    <img src="../img/icone_streetfight.png" alt="">
+                </div></a>
+            </div>
+        </section>
     </header>
+
+    <script src="js/timer.js"></script>
+
+
     
     <main>
-        <section id="introducao">
-            <article>
-                <div class="caixa"></div>
-                    <div class="textoFrase">
-                        <p>
-                            No jogo e na vida, a vitória vem para quem persiste. Jogue com garra, vença com honra!
-                        </p>
-                    </div>
-            </article>
+        
+        <div class="imagemJogos">
+            <div id="vava" class=""><img src="../img/imagem_valorant.png" alt=""></div>
+            <div id="fifinha" class=""><img src="../img/imagem_fifa.png" alt=""></div>
+            <div id="brawl" class=""><img src="../img/imagem_brawlstars.png" alt=""></div>
+            <div id="sf" class=""><img src="../img/imagem_streetfight.png" alt=""></div>
+        </div>
+        
+        <div class="timer">
+        <div class="time-container" id="days">
+            <div class="time" id="days-value"></div>
+        </div>
+        <div class="time-container" id="hours">
+            <div class="time" id="hours-value"></div>
+        </div>
+        <div class="time-container" id="minutes">
+            <div class="time" id="minutes-value"></div>
+        </div>
+        <div class="time-container" id="seconds">
+            <div class="time" id="seconds-value"></div>
+        </div>
+    </div>
+    </main>
 
-        <!-- <div class="timer">
-            Timer como plano de fundo dos site
-        </div> 
+    <div class="Inscricao">
+        <h5>Como Participar</h5>
+        <p>Se inscreva!</p> 
+        <input type="button" value="Participar" />
+    </div>
 
+    
+
+
+
+        <!--
         https://www.brasilcode.com.br/html-semantico-o-que-e-por-que-usar-e-principais-tags/
         <div>
 
@@ -47,10 +99,28 @@
         <div class="contato">
             Contato dos desenvolvedores
         </div> -->
-        </section>
-    </main>
 
-
-
+        <footer>
+            <div class="container">
+                <h4>Nosso GitHub</h4>
+                <p>Site desenvolvido por:</p>
+                <ul>
+                    <li>
+                        <a href="https://github.com/GUSTAGARCIANDS/" target="_blank" class="githubLink">
+                            <p>Gustavo Nunes</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Nicolas75460/" target="_blank" class="githubLink">
+                        <p> Nícolas Oliveira</p>
+                    </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/otavioquintilliano/" target="_blank" class="githubLink">
+                            <p> Otávio Quintilliano</p>
+                    </li>
+                </ul>
+            </div>
+        </footer>
 </body>
 </html>

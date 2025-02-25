@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#interclasse {
+    font-family: Poppins, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 6.5vw;
+}
+
+#gamer {
+    margin: auto;   
+    font-size: 7.5vw;
+    color: rgb(136, 0, 255);
+}
+
+#senai {
+    font-size: 9.5vw;
+    color: red;
+}
+
+.senaigamer {
+    font-family: Poppins, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+header {
+    background: linear-gradient(to bottom, #000000, #1d1d1d 40%, #090023, transparent);
+    display: flex;
+    flex-direction: column;
+    padding: 100px ;
+    align-items: center;
+    text-align: center;
+    height: 150vh;
+    gap: 9rem;
+}
+
+body {
+    background: linear-gradient(to bottom, #0c002f, #10003f, #13004d);
+}
+
+
+.introducao {
+    display: block;
+    margin-top: 25%;
+    background: linear-gradient(to bottom right, #3b3b3b 40%, #1b1b1b);
+    border-radius: 70px;
+    width: 80vw;
+    padding: 2%;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.24);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+.introducao #frase {
+    font-size: 3vw;
+    font-family: Quantico, Geneva, Tahoma, sans-serif;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.introducao .iconeJogos {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 10%;
+}
+
+.iconeJogos img {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    border: 10px solid rgb(31, 31, 31);
+    transition: transform 0.3s ease;
+    transition: 0.5s;
+    user-select: none;
+}
+
+#valorant:hover {
+    filter: drop-shadow(0 0 10px #ff4655);
+    transform: translateY(-5px);
+}
+
+#fifa:hover {
+    filter: drop-shadow(0 0 10px #ffffff);
+    transform: translateY(-5px);
+}
+
+#brawlstars:hover {
+    filter: drop-shadow(0 0 10px #febe20);
+    transform: translateY(-5px);
+}
+
+#streetfight:hover {
+    filter: drop-shadow(0 0 10px #000000);
+    transform: translateY(-5px);
+}

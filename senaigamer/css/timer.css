@@ -1,0 +1,30 @@
+.timer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8vw;
+    font-size: 6rem;
+    font-weight: bold;
+    padding: 30px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.time-container {
+    width: 15vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    font-size: 13vw;
+    color: rgb(200, 0, 255); 
+    text-shadow: 5px 5px 15px rgb(0, 0, 0); 
+    font-family:  teste, Geneva, Tahoma, sans-serif;
+}

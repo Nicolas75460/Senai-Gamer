@@ -1,0 +1,18 @@
+.Inscricao{
+    display: ruby-base;
+    background: linear-gradient(to bottom right, #3b3b3b 40%, #1b1b1b);
+    border-radius: 70px;
+    width: 75vw;
+    padding: 15%;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.24);
+    height: 300px;
+    margin-bottom: 35%;
+    color: white;
+    text-align: left;
+    font-size: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+   

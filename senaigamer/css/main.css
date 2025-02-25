@@ -1,0 +1,29 @@
+#imagem {
+    width: 16vw;
+    background-image: url("../img/imagem_valorant.png");
+}
+
+.imagemJogos {
+    margin-top: 53% ;
+    margin-bottom: 53% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+ 
+.imagemJogos img {
+    width: 16vw;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin: 10px;
+    border: 3px solid #c2aeae;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.24);
+}
+ 
+.imagemJogos img:hover {
+    transform: scale(1.2);
+    filter: saturate(130%);
+}
+
+
