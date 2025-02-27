@@ -1,32 +1,39 @@
 .premios{
-    width: 75vw;
-    height: 50vh;
-    background: #FF5733;
+    width: 80vw;
+    height: 70vh;
+    background: #c2aeae;
     border-radius: 30px;
     box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.24);
     margin-bottom: 35%;
-    display: grid;
-    text-align: left;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     font-size: 4vh;
-    padding: 3%;
+    padding: 6%;
+    text-align: center;
+    margin-top: 80%;
 }
-ol {
-    list-style-position: inside;
-    padding-left: 0;
+
+
+#textoPremio{
+    font-family: Poppins, Geneva, Tahoma, sans-serif;
 }
-li {
-    font-size: 29px;
+
+.premiacao .texto {
+    font-size: 2rem;
     font-weight: bold;
-    color: black;
-    padding: 5px 0;
-}
-
-#textoPremios{
     font-family: Poppins, Geneva, Tahoma, sans-serif;
 }
 
-#textoLi{
-    font-family: Poppins, Geneva, Tahoma, sans-serif;
+.premiacao img {
+    width: 100px;
+    margin-top: 5px;
+}
+
+.premiacao-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20%;
+    margin-top: 5%;
 }

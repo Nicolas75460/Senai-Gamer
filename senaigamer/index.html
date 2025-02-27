@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/timer.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/imagemJogos.css">
+    <link rel="stylesheet" href="../css/jogos.css">
     <link rel="stylesheet" href="../css/inscricao.css">
     <link rel="stylesheet" href="css/premios.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="botaoretorno.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <div class="degrade"></div>
@@ -62,17 +63,57 @@
         <section id="sobre">
             <div class="sobre-container">
                 <h2>O Que é o Interclasse Gamer do SENAI?</h2>
-                <p>O Interclasse Gamer do SENAI é um torneio dedicado aos alunos apaixonados por games...</p>
+                <hr>
+                <p>
+                    O Interclasse Gamer do SENAI é um torneio dedicado aos alunos apaixonados por games, trazendo uma competição saudável e divertida para todos os participantes.
+                    O evento tem como objetivo promover a integração entre os estudantes, estimulando o trabalho em equipe, a estratégia e a habilidade individual em diferentes jogos.
+                </p>
             </div>        
         </section>
 
 
-        <div class="imagemJogos">
-            <div id="vava" class=""><img src="../img/imagem_valorant.png" alt=""></div>
-            <div id="fifinha" class=""><img src="../img/imagem_fifa.png" alt=""></div>
-            <div id="brawl" class=""><img src="../img/imagem_brawlstars.png" alt=""></div>
-            <div id="sf" class=""><img src="../img/imagem_streetfight.png" alt=""></div>
-        </div>
+        <section class="jogos">
+
+            <div class="slide">
+    
+    
+                <div class="item" style="background-image: url(img/slideValorant.jpg);">
+                    <div class="content">
+                        <div class="name">Valorant</div>
+                        <div class="des">Eu e aspas</div>
+                        <button><a href="" target="_blank"><i id="play" class="fa-solid fa-play"></i></a></button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(img/slideFifa.jpg);">
+                    <div class="content">
+                        <div class="name">Ea Sports 24</div>
+                        <div class="des">Otávio meu pato</div>
+                        <button><a href="" target="_blank"><i id="play" class="fa-solid fa-play"></i></a></button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(img/slideStreetfight.png);">
+                    <div class="content">
+                        <div class="name">Street Fighter 6</div>
+                        <div class="des">Melhor jogador de todos</div>
+                        <button><a href="" target="_blank"><i id="play" class="fa-solid fa-play"></i></a></button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(img/slideBrawl.png);">
+                    <div class="content">
+                        <div class="name">Brawl Stars</div>
+                        <div class="des">Top 1 Crow Br</div>
+                        <button><a href="" target="_blank"><i id="play" class="fa-solid fa-play"></i></a></button>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="button">
+                <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+    
+        </section>
         
         <div class="timer">
         <div class="time-container" id="days">
@@ -89,6 +130,24 @@
         </div>
     </div>
 
+    <section class="premios">
+        <h2  id="textoPremio">PREMIOS DO GANHADORES</h2>
+        <div class="premiacao-container">
+            <div class="premiacao">
+                <div class="texto">1. Lugar: Bolinho Do Sesi</div>
+                <img src="../img/medalha1.png" alt="Medalha de Ouro">
+            </div>
+            <div class="premiacao">
+                <div class="texto">2. Lugar: Bala</div>
+                <img src="../img/medalha2.png" alt="Medalha de Prata">
+            </div>
+            <div class="premiacao">
+                <div class="texto">3. Lugar: Disquete</div>
+                <img src="../img/medalha3.png" alt="Medalha de Bronze">
+            </div>
+        </div>
+    </section>
+
     <section id="participar">
         <div class="inscricao">
             <div class="texto">
@@ -98,21 +157,10 @@
             <a href="https://forms.gle/ixhE2SBdjAumGCpx5" target="_blank" class="btn"><span>PARTICIPAR</span></a>
         </div>
     </section>
-    <div class="premios">
-        <h2  id="textoPremios">PREMIOS DO GANHADORES</h2>
-        <ol>
-            <li id="textoLi">Lugar: Bolinho Do Sesi</li>
-            <li id="textoLi">lugar: Bala</li>
-            <li id="textoLi">Lugar: Disquete</li>
-        </ol>
-    </div>
-    <!-- ✅ Detalhamento dos prêmios para os vencedores.
-    ✅ Imagens dos troféus/medalhas (se houver).
-    ✅ Patrocinadores (caso tenha).
-    -->
+
     </main>
 
-
+    <button id="scrollToTopBtn" title="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
 
 
         <!--
@@ -147,5 +195,9 @@
                 </ul>
             </div>
         </footer>
+
+        <script src="../senaigamer/js/background.js"></script>
+        <script src="jogos.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>
