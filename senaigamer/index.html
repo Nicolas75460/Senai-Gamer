@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senai Gamer</title>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/timer.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/imagemJogos.css">
-    <link rel="stylesheet" href="css/inscricao.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/timer.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/imagemJogos.css">
+    <link rel="stylesheet" href="../css/inscricao.css">
+    <link rel="stylesheet" href="css/premios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
     <div class="degrade"></div>
@@ -56,7 +59,14 @@
 
     
     <main>
-        
+        <section id="sobre">
+            <div class="sobre-container">
+                <h2>O Que é o Interclasse Gamer do SENAI?</h2>
+                <p>O Interclasse Gamer do SENAI é um torneio dedicado aos alunos apaixonados por games...</p>
+            </div>        
+        </section>
+
+
         <div class="imagemJogos">
             <div id="vava" class=""><img src="../img/imagem_valorant.png" alt=""></div>
             <div id="fifinha" class=""><img src="../img/imagem_fifa.png" alt=""></div>
@@ -78,15 +88,30 @@
             <div class="time" id="seconds-value"></div>
         </div>
     </div>
+
+    <section id="participar">
+        <div class="inscricao">
+            <div class="texto">
+                <h5 id="textoParticipar">Quer Participar?</h5>
+                <p id="textoInscrevasse">Se inscreva!</p> 
+            </div>
+            <a href="https://forms.gle/ixhE2SBdjAumGCpx5" target="_blank" class="btn"><span>PARTICIPAR</span></a>
+        </div>
+    </section>
+    <div class="premios">
+        <h2  id="textoPremios">PREMIOS DO GANHADORES</h2>
+        <ol>
+            <li id="textoLi">Lugar: Bolinho Do Sesi</li>
+            <li id="textoLi">lugar: Bala</li>
+            <li id="textoLi">Lugar: Disquete</li>
+        </ol>
+    </div>
+    <!-- ✅ Detalhamento dos prêmios para os vencedores.
+    ✅ Imagens dos troféus/medalhas (se houver).
+    ✅ Patrocinadores (caso tenha).
+    -->
     </main>
 
-    <div class="Inscricao">
-        <h5>Como Participar</h5>
-        <p>Se inscreva!</p> 
-        <input type="button" value="Participar" />
-    </div>
-
-    
 
 
 
@@ -102,22 +127,22 @@
 
         <footer>
             <div class="container">
-                <h4>Nosso GitHub</h4>
-                <p>Site desenvolvido por:</p>
-                <ul>
-                    <li>
+                <h2>Site desenvolvido por:</h2>
+                <ul class="creditos-container">
+                    <li class="credito-item">
                         <a href="https://github.com/GUSTAGARCIANDS/" target="_blank" class="githubLink">
-                            <p>Gustavo Nunes</p>
+                            <i class="fa-brands fa-github"></i>Gustavo Garcia
                         </a>
                     </li>
-                    <li>
+                    <li class="credito-item">
                         <a href="https://github.com/Nicolas75460/" target="_blank" class="githubLink">
-                        <p> Nícolas Oliveira</p>
-                    </a>
+                            <i class="fa-brands fa-github"></i>Nícolas Oliveira
+                        </a>
                     </li>
-                    <li>
+                    <li class="credito-item">
                         <a href="https://github.com/otavioquintilliano/" target="_blank" class="githubLink">
-                            <p> Otávio Quintilliano</p>
+                            <i class="fa-brands fa-github"></i>Otávio Quintilliano
+                        </a>
                     </li>
                 </ul>
             </div>

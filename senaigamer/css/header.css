@@ -12,17 +12,17 @@ html{
     font-family: Poppins, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: center;
-    font-size: 6.5vw;
+    font-size: clamp(2rem, 6.5vw, 5rem);
 }
 
 #gamer {
     margin: auto;   
-    font-size: 7.5vw;
+    font-size: clamp(3rem, 7.5vw, 6rem);
     color: rgb(136, 0, 255);
 }
 
 #senai {
-    font-size: 9.5vw;
+    font-size: clamp(4rem, 9.5vw, 7rem);
     color: red;
 }
 
@@ -40,22 +40,20 @@ header {
     padding: 100px ;
     align-items: center;
     text-align: center;
-    height: 150vh;
+    min-height: 100vh;
+    height: auto;
     gap: 9rem;
 }
 
-body {
-    background: linear-gradient(to bottom, #0c002f, #10003f, #13004d);
-}
 
 
 .introducao {
     display: block;
-    margin-top: 25%;
     background: linear-gradient(to bottom right, #3b3b3b 40%, #1b1b1b);
     border-radius: 70px;
-    width: 80vw;
-    padding: 2%;
+    max-width: 1000px;
+    width: 90%;
+    padding: 3%;
     box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.24);
 }
 
@@ -73,7 +71,9 @@ body {
 
 .introducao .iconeJogos {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    justify-items: center;
     margin-top: 10%;
 }
 

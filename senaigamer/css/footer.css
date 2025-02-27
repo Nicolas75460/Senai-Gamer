@@ -1,14 +1,39 @@
-ul li a {
-    text-decoration: none;
-    color: white; 
- }
+.creditos-container {
+  display: flex;
+  justify-content: center;
+  gap: min(10vw, 100px); 
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
 
- footer{
-   background:#3b3b3b;
-   font-size: 22px;
-   border-radius: 4%;
-   height: 200px;
+.credito-item a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.credito-item i {
+  font-size: clamp(24px, 4vw, 48px);
+}
+
+footer{
+  background: linear-gradient(to top, #000000, #090023);
+  min-height: 100px;
   text-align: center;
-  color: white ;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
 
- }
+footer h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

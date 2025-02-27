@@ -1,29 +1,48 @@
-#imagem {
-    width: 16vw;
-    background-image: url("../img/imagem_valorant.png");
+body {
+    background: linear-gradient(to bottom, #0c002f, #10003f, #13004d);
 }
 
 .imagemJogos {
-    margin-top: 53% ;
-    margin-bottom: 53% ;
+    padding: 80vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 5vw;
 }
  
 .imagemJogos img {
-    width: 16vw;
+    width: min(16vw, 250px);
     border-radius: 10px;
     transition: transform 0.3s ease;
     margin: 10px;
     border: 3px solid #c2aeae;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.24);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.24);
 }
  
 .imagemJogos img:hover {
     transform: scale(1.2);
     filter: saturate(130%);
+}
+
+#sobre {
+    gap: 2rem;
+    padding: 5vh 5vw;
+    margin: auto;
+    width: 90%;
+    height: 90vh;
+    background-image: url(../img/gamer.jpg);
+
+    color: white;
+    display: flex;
+    border-radius: 30px;
+    margin-top: 20%;
+    box-shadow: 5px 5px 5px black;
+}
+
+
+#sobre .sobre-conteiner {
+
 }
 
 

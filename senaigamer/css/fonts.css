@@ -1,9 +1,4 @@
 @font-face {
-    font-family: 'FjallaOne';
-    src: url('../fonts/Poppins-Black.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'Quantico';
     src: url('../fonts/Quantico-Bold.ttf') format('truetype');
 }
@@ -14,6 +9,11 @@
 }
 
 @font-face {
-    font-family: 'Teste';
-    src: url("../fonts/Rajdhani-Bold.ttf");
+    font-family: 'Rajdhani';
+    src: url('../fonts/Rajdhani-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ArchivoBlack';
+    src: url('../fonts/ArchivoBlack-Regular.ttf') format('truetype');
 }
